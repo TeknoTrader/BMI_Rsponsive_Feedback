@@ -29,7 +29,7 @@ def get_bmi_range(sesso, eta):
         return 22.0, 29.0  # Intervallo per anziani (maschi e femmine)
     else:
         # Valori normali per adulti
-        if sesso == "Женщина":
+        if sesso == "Мужчина":
             return 20.0, 25.0  # Intervallo per maschi adulti
         else:
             return 18.5, 24.9  # Intervallo per femmine adulte
