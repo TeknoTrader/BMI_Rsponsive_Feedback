@@ -1,5 +1,11 @@
 import streamlit as st
 
+st.write("# Давай проверим, правильный ли у тебя вес!")
+st.write("### Привет, бабушка Люда! Надеюсь, тебе понравится этот сайт.")
+st.write("### Введите ниже параметры человека, которого хотите проверить.")
+
+st.divider()
+
 # Funzione per determinare i valori di BMI normali in base al sesso, età e anzianità
 def get_bmi_range(sesso, eta):
     if eta < 18:
@@ -29,7 +35,7 @@ def get_bmi_range(sesso, eta):
             return 18.5, 24.9  # Intervallo per femmine adulte
 
 # Selezione del sesso
-sesso = st.radio("Sesso: ", ("Мужчина", "Женщина"))
+sesso = st.radio("Пол: ", ("Мужчина", "Женщина"))
 
 # Input per peso
 peso = st.number_input('Масса', value=50.0, step=0.5)
@@ -40,7 +46,7 @@ if peso > 0:
 
 if eta > 0:
     # Input per altezza
-    altezza = st.number_input('Высота', value=1.6, step=0.1)
+    altezza = st.number_input('Высота', value=1.6, step=0.05)
 
 # Calcolo del BMI
 bmi_ora = peso / (altezza ** 2)
