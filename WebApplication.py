@@ -162,7 +162,7 @@ def get_bmi_category(bmi, age):
 
 # Language initialization
 if 'language' not in st.session_state:
-    st.session_state.language = 'ru'
+    st.session_state.language = 'en'
 
 # Language selection in sidebar
 with st.sidebar:
