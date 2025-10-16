@@ -3,3 +3,5 @@ In this way she will never ask me again if X person needs to add/lose some weigh
 
 I hope it will make her happy!
 
+[Visit the web application](https://weightdetector.streamlit.app/)
+
